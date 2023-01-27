@@ -23,7 +23,6 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1;
-    /*para que se vea por encima*/
     flex-wrap: wrap;
 }
 
@@ -176,6 +175,8 @@ a:hover {
     overflow: hidden;
 }
 
+    /*Background image*/
+
 .cards .card-img {
     width: 100%;
     height: 100%;
@@ -201,6 +202,8 @@ a:hover {
     z-index: 1;
     transition: 1s;
 }
+
+      /*Disappearing background image*/
 
 .cards .card:hover .card-img {
     opacity: 0;
