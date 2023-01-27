@@ -1,0 +1,231 @@
+html,
+body {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 22px;
+    color: seashell;
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+
+header {
+    min-height: 69px;
+    width: 100%;
+    position: fixed;
+    background: grey;
+    opacity: 0.9;
+    border-bottom: 2px solid seashell;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    /*para que se vea por encima*/
+    flex-wrap: wrap;
+}
+
+header img {
+    margin: 0px 0px 0px 10px;
+    height: 50px;
+}
+
+header ul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+header li {
+    margin: 0 10px;
+}
+
+a {
+    color: seashell;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: silver;
+}
+
+
+#content {
+    position: sticky;    /*relative para que siga al header*/
+    top: 71px;           /*espacio para el header*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Mission*/
+
+#Mission {
+    min-height: 700px;
+    width: 100%;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Mission .titles {
+    background-color: seashell;
+    color: grey;
+    opacity: 0.9;
+    width: 100%;
+}
+
+/*Featured Tea*/
+
+#FeaturedTea {
+    color: grey;
+    max-width: 1200px;
+    padding: 71px 0;
+}
+
+.tea-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+      /*Animation*/     
+
+.tea-container .card {
+    width: 300px;
+    height: 200px;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #fff;
+    position: relative;
+}
+
+.tea-container .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.tea-container .card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    top: -100%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tea-container .card:hover .card-body {
+    top: 0;
+}
+
+/*Locations*/
+
+#Locations {
+    padding: 100px 0;
+    min-height: 500px;
+    width: 100%;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#Locations h1 {
+    margin: 0 0 15px 0;
+}
+
+.cards {
+    display: inline-flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    color: grey;
+    background-color: seashell;
+    opacity: 0.9;
+    width: 300px;
+    height: 400px;
+    margin: 20px 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 8px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.cards .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.cards .card-body {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    right: 0%;
+    position: absolute;
+    background: #2c221950;
+    backdrop-filter: blur(1px);
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    transition: 1s;
+}
+
+.cards .card:hover .card-img {
+    opacity: 0;
+}
+
+#Locations .card h3 {
+    font-weight: lighter;
+}
+
+#Locations .card .title {
+    font-weight: bold;
+}
+
+/*Footer*/
+
+footer {
+    color: grey;
+    min-height: 200px;
+    width: 100%;
+    padding: 25px 0 0 0;
+}
+
+.copyright {
+    text-align: left;
+    margin-bottom: 0;
+    background-color: seashell;
+    padding: 10px 20px;
+}
