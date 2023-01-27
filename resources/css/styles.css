@@ -55,8 +55,8 @@ a:hover {
 
 
 #content {
-    position: sticky;    /*relative para que siga al header*/
-    top: 71px;           /*espacio para el header*/
+    position: sticky;    
+    top: 71px;         
     display: flex;
     justify-content: center;
     align-items: center;
